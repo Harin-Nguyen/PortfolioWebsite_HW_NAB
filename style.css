@@ -1,0 +1,83 @@
+body,h1,h2,h3{font-family: "Lato", sans-serif;}
+  body, html {
+    height: 100%;
+    color: #a0a0a0;
+    line-height: 1.6;
+  }
+
+  .w3-wide {letter-spacing: 8px;}
+  .w3-hover-opacity {cursor: pointer;}
+
+  @media only screen and (max-device-width: 1600px) {
+    .img-1, .img-2, .img-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+  }
+
+
+  .img-1, .img-2, .img-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-1 {
+    background-image: url('F.jpg');
+    min-height: 100%;
+  }
+
+  .img-2 {
+    background-image: url('R.jpg');
+    min-height: 400px;
+  }
+
+  .img-3 {
+    background-image: url('T.jpg');
+    min-height: 400px;
+  }
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-caption {
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
